@@ -1,0 +1,29 @@
+<view class="bindView">
+  <view class="section">
+    <label>真实姓名：</label>
+    <input name="realName" bindinput="inputName" class="inputStyle" placeholder=""/>
+  </view>
+  <view class="section">
+    <label>学号：</label>
+    <input name="stuNumber" bindinput="inputNumber" class="inputStyle" placeholder=""/>
+  </view>
+  <view class="section">
+    <label>学院：</label>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">{{array[index]}}</view>
+  </picker>
+  </view>
+  <view class="section">
+    <label>手机：</label>
+    <input name="stuNumber" bindinput="inputPhone" class="inputStyle" placeholder=""/>
+  </view>
+  <view class="section">
+    <label>是否愿意成为干事：</label>
+    <picker bindchange="pickerChange" value="{{item}}" range="{{elements}}">
+    <view class="picker">{{elements[item]}}</view>
+  </picker>
+  </view>
+  <view class="section">
+    <button class="submitBind" bindtap="submitBind">确定</button>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="hasEnrollView">
+  <view class="hasEnroll_container">
+    <icon type="{{hasEnrollType}}" size="{{hasEnrollSize}}" color="hasEnrollColor"/>  
+  </view>
+  <view class="hasEnroll_context">
+    <text class="textType">{{hasEnrollText}}</text> 
+  </view>
+  <view class="hasEnroll_checkbtn">
+    <button class="backBtn" bindtap="jumpBack">{{backText}}</button>
+  </view>
+  <view class="hasEnroll_checkbtn">
+    <button class="rechargeBtn" bindtap="jumpRecharge">{{rechargeText}}</button>
+  </view>
+</view>
