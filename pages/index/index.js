@@ -132,7 +132,11 @@ Page({
               //成功填写招新信息
               else if (that.data.returnCode.indexOf('success') != -1) {
                 wx.redirectTo({
-                  url: '../recharge/recharge',
+                  url: '../questionnaire/questionnaire',
+                });
+                wx.setStorage({
+                  key: 'stuNum',
+                  data: that.data.stunum
                 });
               }
               else {

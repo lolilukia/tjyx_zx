@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/recharge/recharge",
-    "pages/hasEnroll/hasEnroll"
+    "pages/hasEnroll/hasEnroll",
+    "pages/questionnaire/questionnaire"
   ],
   "window":{
     "backgroundTextStyle":"light",
