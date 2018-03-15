@@ -8,7 +8,7 @@ Page({
     phoneNum: '',
     willing: '0',
     returnCode: '',
-    array: ['汽车学院','铁道与城市轨道交通研究院','经济与管理学院','交通运输工程学院','中德学院','机械工程学院','电子与信息工程学院','软件学院','材料科学与工程学院','传播与艺术学院','中德工程学院'],
+    array: ['汽车学院', '铁道与城市轨道交通研究院', '经济与管理学院', '交通运输工程学院', '中德学院', '机械工程学院', '电子与信息工程学院', '软件学院', '材料科学与工程学院','艺术与传媒学院','中德工程学院'],
     objectArray: [
       {
         id: 0,
@@ -48,7 +48,7 @@ Page({
       },
       {
         id: 9,
-        name: '传播与艺术学院'
+        name: '艺术与传媒学院'
       },
       {
         id: 10,
@@ -95,6 +95,14 @@ Page({
       if (this.data.phoneNum.length != 11 || !myreg.test(this.data.phoneNum)){
         wx.showToast({
           title: '手机号填写有误',
+          icon: 'loading',
+          duration: 1000
+        })
+        return;
+      }
+      else if (Number.isNaN(Number(this.data.stunum))){
+        wx.showToast({
+          title: '学号填写有误',
           icon: 'loading',
           duration: 1000
         })
