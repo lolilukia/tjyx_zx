@@ -139,6 +139,7 @@ Page({
               }
               //成功填写招新信息
               else if (that.data.returnCode.indexOf('success') != -1) {
+                /*
                 wx.redirectTo({
                   url: '../questionnaire/questionnaire',
                 });
@@ -146,6 +147,12 @@ Page({
                   key: 'stuNum',
                   data: that.data.stunum
                 });
+                */
+                wx.showToast({
+                  title: '招新完成',
+                  icon: 'success',
+                  duration: 1000
+                })
               }
               else {
                 console.log(that.data.returnCode);
